@@ -43,6 +43,7 @@ public class CarController : MonoBehaviour
   private void Update() {
     GetInputs();
     CalculateCarMovement();
+    CalculateSteering();
   }
 
   private void GetInputs()
@@ -54,7 +55,7 @@ public class CarController : MonoBehaviour
     }
   }
 
-  void CalculateCarMovement()
+  private void CalculateCarMovement()
   {
     carSpeed = carRigidbody.velocity.magnitude;
     carSpeedConverted = Mathf.Round(carSpeed * 3.6f);
@@ -63,6 +64,12 @@ public class CarController : MonoBehaviour
     HandleBrake();
 
     ApplyMotorTorque();
+  }
+
+  private void CalculateSteering(){
+    tireAngle = maximumSteeringAngle * horizontal;
+    FrontWheelLeftCollider.steerAngle = tireAngle;
+    FrontWheelRightCollider.steerAngle = tireAngle;
   }
 
 

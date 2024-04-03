@@ -6253,37 +6253,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 18dc4ab0ca717db448d313020d981720, type: 3}
   m_PrefabInstance: {fileID: 361435238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &253473112
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 253473113}
-  m_Layer: 0
-  m_Name: COM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &253473113
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253473112}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.548, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 543450653549389240}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &253860757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 05998247510e6e34fb72ca3008c8b5fd, type: 3}
@@ -62372,7 +62341,6 @@ Transform:
   - {fileID: 604771888}
   - {fileID: 667399331}
   - {fileID: 1636385213}
-  - {fileID: 253473113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &601127502880414473
@@ -62635,7 +62603,7 @@ MonoBehaviour:
   maximumSteeringAngle: 20
   maximumSpeed: 140
   brakePower: 5000
-  COM: {fileID: 253473113}
+  COM: {fileID: 604771888}
 --- !u!33 &919861472655133517
 MeshFilter:
   m_ObjectHideFlags: 0
